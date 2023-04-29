@@ -1,14 +1,22 @@
 import DefineCategory from "../../utils/defineCategory";
+import { useParams } from "react-router-dom";
 
 const Section = () => {
-  const { data, isLoading }: any = DefineCategory("category2");
+  const { category } = useParams();
+  const { data, isLoading }: any = DefineCategory(category);
 
   return (
-    <div>
-      {data?.results.map((item: any, idx: number) => (
-        <p key={idx}>{item.name}</p>
-      ))}
-    </div>
+    <>
+      {isLoading ? (
+        "Loading"
+      ) : (
+        <div>
+          {data?.results.map((item: any, idx: number) => (
+            <p key={idx}>{item.name}</p>
+          ))}
+        </div>
+      )}
+    </>
   );
 };
 

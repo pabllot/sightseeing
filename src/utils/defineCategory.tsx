@@ -1,6 +1,6 @@
 import { usePlaces } from "../hooks/usePlaces";
 
-const DefineCategory = (param: string) => {
+const DefineCategory = (param: any) => {
   const {
     chocolate,
     IsLoadingChocolate,
@@ -16,12 +16,12 @@ const DefineCategory = (param: string) => {
     isLoadingAmusementParks,
   } = usePlaces();
 
-  if (param === "category1") return { data: chocolate, isLoading: IsLoadingChocolate };
-  if (param === "category2") return { data: restaurants, isLoading: isLoadingRestaurant };
-  if (param === "category3") return { data: museums, isLoading: isLoadingMuseums };
-  if (param === "category4") return { data: landmarks, isLoading: isLoadingLandmarks };
-  if (param === "category5") return { data: clothingStores, isLoading: isLoadingClothingStores };
-  if (param === "category6") return { data: amusementParks, isLoading: isLoadingAmusementParks };
+  if (param === "Chocolates") return { data: chocolate, isLoading: IsLoadingChocolate };
+  if (param === "Restaurantes") return { data: restaurants, isLoading: isLoadingRestaurant };
+  if (param === "Museus") return { data: museums, isLoading: isLoadingMuseums };
+  if (param === "Turismo") return { data: landmarks, isLoading: isLoadingLandmarks };
+  if (param === "Lojas") return { data: clothingStores, isLoading: isLoadingClothingStores };
+  if (param === "Parques") return { data: amusementParks, isLoading: isLoadingAmusementParks };
 };
 
 export default DefineCategory;

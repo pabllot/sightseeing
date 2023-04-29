@@ -1,9 +1,14 @@
-import Section from "../../components/Section";
+import { Link } from "react-router-dom";
+import { categories } from "../../config/categories";
 
 const Home = () => {
   return (
     <div>
-      <Section />
+      {categories.map((category: any, idx: number) => (
+        <Link key={idx} to={`/${category}`} style={{ textDecoration: "none" }}>
+          <div>{category}</div>
+        </Link>
+      ))}{" "}
     </div>
   );
 };
