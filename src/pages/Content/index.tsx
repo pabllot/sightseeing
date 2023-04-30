@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import Map from "../Map";
-import styles from "./styles.module.scss";
 import { BiArrowBack } from "react-icons/bi";
 
-const Section = () => {
+import Map from "../../components/Map";
+import styles from "./styles.module.scss";
+
+const Content = () => {
   return (
     <div className={styles.container}>
       <div className={styles.text}>Encontre o ponto mais próximo de você.</div>
@@ -17,4 +18,4 @@ const Section = () => {
   );
 };
 
-export default Section;
+export default Content;

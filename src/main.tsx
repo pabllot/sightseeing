@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import "./styles/global.scss";
 import { PlacesContextProvider } from "./context/PlacesContext";
 import AppRoutes from "./AppRoutes";
+import "./styles/global.scss";
 
 const queryClient = new QueryClient();
 
