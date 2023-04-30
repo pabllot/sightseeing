@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css";
+import "./styles.css";
 
 import { categories } from "../../config/categories";
 import styles from "./styles.module.scss";
