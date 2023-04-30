@@ -25,6 +25,7 @@ function Map() {
       });
 
       data.results.map((item: any) => {
+        //@ts-ignore
         const marker = new window.google.maps.Marker({
           position: { lat: item.geocodes.main.latitude, lng: item.geocodes.main.longitude },
           map: map,
