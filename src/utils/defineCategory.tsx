@@ -19,7 +19,7 @@ const DefineCategory = (param: any) => {
   if (param === "Chocolates") return { data: chocolate, isLoading: IsLoadingChocolate };
   if (param === "Restaurantes") return { data: restaurants, isLoading: isLoadingRestaurant };
   if (param === "Museus") return { data: museums, isLoading: isLoadingMuseums };
-  if (param === "Turismo") return { data: landmarks, isLoading: isLoadingLandmarks };
+  if (param === "Landmarks") return { data: landmarks, isLoading: isLoadingLandmarks };
   if (param === "Lojas") return { data: clothingStores, isLoading: isLoadingClothingStores };
   if (param === "Parques") return { data: amusementParks, isLoading: isLoadingAmusementParks };
 };

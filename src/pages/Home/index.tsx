@@ -6,8 +6,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import styles from "./styles.module.scss";
-import Navbar from "../../components/Navbar";
-import landscape from "../../assets/snowland.webp";
 
 const Home = () => {
   return (
