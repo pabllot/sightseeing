@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import styles from "./styles.module.scss";
 import Navbar from "../../components/Navbar";
-import landscape from "../../assets/chocolate.jpg";
+import landscape from "../../assets/snowland.webp";
 
 const Home = () => {
   return (
@@ -17,13 +17,13 @@ const Home = () => {
         <div>Oi</div>
         <div className={styles.wrapper}>
           <Swiper modules={[Navigation, Pagination]} navigation pagination>
-            {categories.map((category: any, idx: number) => (
+            {categories.map((item: any, idx: number) => (
               <SwiperSlide>
                 <div className={styles.category}>
-                  <Link key={idx} to={`/${category}`} style={{ textDecoration: "none" }}>
-                    <img className={styles.image} src={landscape} />
+                  <Link key={idx} to={`/${item.category}`} style={{ textDecoration: "none" }}>
+                    <img className={styles.image} src={item.image} />
                   </Link>
-                  <p>{category}</p>
+                  <p>{item.category}</p>
                 </div>
               </SwiperSlide>
             ))}{" "}
