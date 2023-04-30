@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { categories } from "../../config/categories";
 import { Swiper, SwiperSlide } from "swiper/react";
+//@ts-ignore
 import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
