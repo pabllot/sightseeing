@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const TOKEN = "fsq31dqkkrNATxdsBTGfpAJemFZf3v+v4BTz1f6G5V8hkP0=";
+import { TOKEN } from "../apikey";
 
 export const foursquareAPI = axios.create({
   baseURL: "https://api.foursquare.com/v3",
