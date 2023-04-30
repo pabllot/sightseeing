@@ -1,3 +1,10 @@
-.wrapper {
-  color: white;
+.container {
+  background: rgb(10, 12, 59);
+  background: linear-gradient(90deg, rgba(14, 15, 57, 0.815) 36%, rgb(9, 10, 41) 89%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

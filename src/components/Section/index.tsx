@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 const Section = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <Map />
     </div>
   );
