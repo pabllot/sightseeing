@@ -11,24 +11,24 @@ import landscape from "../../assets/snowland.webp";
 
 const Home = () => {
   return (
-    <div>
-      <Navbar />
-      <div className={styles.container}>
-        <div>Oi</div>
-        <div className={styles.wrapper}>
-          <Swiper modules={[Navigation, Pagination]} navigation pagination>
-            {categories.map((item: any, idx: number) => (
-              <SwiperSlide>
-                <div className={styles.category}>
-                  <Link key={idx} to={`/${item.category}`} style={{ textDecoration: "none" }}>
-                    <img className={styles.image} src={item.image} />
-                  </Link>
-                  <p>{item.category}</p>
-                </div>
-              </SwiperSlide>
-            ))}{" "}
-          </Swiper>
-        </div>
+    <div className={styles.container}>
+      <div className={styles.text}>
+        <span>Visitando Gramado?</span>
+        <strong>Encontre os pontos mais próximos de você!</strong>
+      </div>
+      <div className={styles.wrapper}>
+        <Swiper modules={[Navigation, Pagination]} navigation pagination>
+          {categories.map((item: any, idx: number) => (
+            <SwiperSlide>
+              <div className={styles.category}>
+                <Link key={idx} to={`/${item.category}`} style={{ textDecoration: "none" }}>
+                  <img className={styles.image} src={item.image} />
+                </Link>
+                <p>{item.category}</p>
+              </div>
+            </SwiperSlide>
+          ))}{" "}
+        </Swiper>
       </div>
     </div>
   );

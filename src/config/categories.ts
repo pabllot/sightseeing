@@ -6,10 +6,10 @@ import lojas from "../assets/lojas.jpg";
 import turismo from "../assets/turismo.jpg";
 
 export const categories = [
+  { category: "Turismo", image: turismo },
   { category: "Parques", image: parques },
   { category: "Restaurantes", image: restaurantes },
   { category: "Museus", image: museus },
   { category: "Chocolates", image: chocolate },
   { category: "Lojas", image: lojas },
-  { category: "Turismo", image: turismo },
 ];
