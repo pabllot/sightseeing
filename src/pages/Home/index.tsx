@@ -6,7 +6,7 @@ const Home = () => {
     <div>
       {categories.map((category: any, idx: number) => (
         <Link key={idx} to={`/${category}`} style={{ textDecoration: "none" }}>
-          <div>{category}</div>
+          <div style={{ marginBottom: "2rem" }}>{category}</div>
         </Link>
       ))}{" "}
     </div>

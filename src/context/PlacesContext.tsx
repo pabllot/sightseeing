@@ -13,7 +13,7 @@ export const PlacesContextProvider = ({ children }: ChildrenProps) => {
   const { data: chocolate, isLoading: IsLoadingChocolate } = useQuery({
     queryKey: ["chocolate"],
     queryFn: async () => {
-      const res = await foursquareAPI.get("/places/search?ll=-29.3788,-50.8766&categories=17062&limit=50");
+      const res = await foursquareAPI.get("/places/search?ll=-29.3788,-50.8766&categories=17062&limit=50&radius=10000");
       return res.data;
     },
   });
