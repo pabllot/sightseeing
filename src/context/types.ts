@@ -44,7 +44,7 @@ export interface Response {
 
 export type ContextTypes = {
   chocolate: Response;
-  IsLoadingChocolate: boolean;
+  isLoadingChocolate: boolean;
   restaurants: Response;
   isLoadingRestaurant: boolean;
   museums: Response;
@@ -59,7 +59,7 @@ export type ContextTypes = {
 
 export const initialState = {
   chocolate: { results: [] },
-  IsLoadingChocolate: false,
+  isLoadingChocolate: false,
   restaurants: { results: [] },
   isLoadingRestaurant: false,
   museums: { results: [] },

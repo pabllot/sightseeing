@@ -9,7 +9,7 @@ interface CategoryProps {
 const DefineCategory = (param: string | undefined): CategoryProps => {
   const {
     chocolate,
-    IsLoadingChocolate,
+    isLoadingChocolate,
     restaurants,
     isLoadingRestaurant,
     museums,
@@ -22,7 +22,7 @@ const DefineCategory = (param: string | undefined): CategoryProps => {
     isLoadingAmusementParks,
   } = usePlaces();
 
-  if (param === "Chocolates") return { data: chocolate, isLoading: IsLoadingChocolate };
+  if (param === "Chocolates") return { data: chocolate, isLoading: isLoadingChocolate };
   if (param === "Restaurantes") return { data: restaurants, isLoading: isLoadingRestaurant };
   if (param === "Museus") return { data: museums, isLoading: isLoadingMuseums };
   if (param === "Landmarks") return { data: landmarks, isLoading: isLoadingLandmarks };
