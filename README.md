@@ -4,12 +4,12 @@
 
 ![01proto](https://user-images.githubusercontent.com/101361880/235376103-3a1de302-7d74-461f-a458-8d8d90480d33.gif)
 
-<h3 align="center" >Ferramentas utilizadas:</h3>
+<h3 align="center">Ferramentas/Tecnologias utilizadas:</h3>
 
-<p align="center">Tanstack-react-query</p>
+<p align="center">Typescript</p>
+<p align="center">Tanstack/react-query</p>
 <p align="center">useContext</p>
-<p align="center">React-router-dom</p>
-<p align="center">Axios</p>
+<p align="center">Sass (utilizei o formato module.scss)</p>
 <p align="center">Swiper</p>
-<p align="center">React-icons</p>
-<p align="center">axios</p>
+<p align="center">Axios</p>
+<p align="center">React-router-dom</p>
