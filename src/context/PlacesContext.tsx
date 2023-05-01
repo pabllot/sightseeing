@@ -1,66 +1,47 @@
 import { createContext } from "react";
 import { useQuery } from "@tanstack/react-query";
 
-import { foursquareAPI } from "../services/foursquareAPI";
+import { getCategoryData } from "../utils/getCategoryData";
 import { ChildrenProps, ContextTypes, initialState } from "./types";
 
 export const PlacesContext = createContext<ContextTypes>(initialState);
 
 export const PlacesContextProvider = ({ children }: ChildrenProps) => {
-  const { data: chocolate, isLoading: IsLoadingChocolate } = useQuery({
+  const { data: chocolate, isLoading: isLoadingChocolate } = useQuery({
     queryKey: ["chocolate"],
-    queryFn: async () => {
-      const res = await foursquareAPI.get("/places/search?ll=-29.3788,-50.8766&categories=17062&limit=50&radius=10000");
-      console.log(JSON.stringify(res.data, null, 2));
-      return res.data;
-    },
+    queryFn: () => getCategoryData("17062"),
   });
 
   const { data: restaurants, isLoading: isLoadingRestaurant } = useQuery({
     queryKey: ["restaurants"],
-    queryFn: async () => {
-      const res = await foursquareAPI.get("/places/search?ll=-29.3788,-50.8766&categories=13065&limit=50&radius=10000");
-      return res.data;
-    },
+    queryFn: () => getCategoryData("13065"),
   });
 
   const { data: landmarks, isLoading: isLoadingLandmarks } = useQuery({
     queryKey: ["landmarks"],
-    queryFn: async () => {
-      const res = await foursquareAPI.get("/places/search?ll=-29.3788,-50.8766&categories=16000&limit=50&radius=10000");
-      return res.data;
-    },
+    queryFn: () => getCategoryData("16000"),
   });
 
   const { data: museums, isLoading: isLoadingMuseums } = useQuery({
     queryKey: ["museums"],
-    queryFn: async () => {
-      const res = await foursquareAPI.get("/places/search?ll=-29.3788,-50.8766&categories=10028&limit=50&radius=10000");
-      return res.data;
-    },
+    queryFn: () => getCategoryData("10028"),
   });
 
   const { data: clothingStores, isLoading: isLoadingClothingStores } = useQuery({
     queryKey: ["clothingStores"],
-    queryFn: async () => {
-      const res = await foursquareAPI.get("/places/search?ll=-29.3788,-50.8766&categories=17043&limit=50&radius=10000");
-      return res.data;
-    },
+    queryFn: () => getCategoryData("17043"),
   });
 
   const { data: amusementParks, isLoading: isLoadingAmusementParks } = useQuery({
     queryKey: ["amusementParks"],
-    queryFn: async () => {
-      const res = await foursquareAPI.get("/places/search?ll=-29.3788,-50.8766&categories=10001&limit=50&radius=10000");
-      return res.data;
-    },
+    queryFn: () => getCategoryData("10001"),
   });
 
   return (
     <PlacesContext.Provider
       value={{
         chocolate,
-        IsLoadingChocolate,
+        isLoadingChocolate,
         restaurants,
         isLoadingRestaurant,
         museums,
