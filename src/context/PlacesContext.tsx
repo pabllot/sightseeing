@@ -1,19 +1,17 @@
-import { ReactNode } from "react";
 import { createContext } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { foursquareAPI } from "../services/foursquareAPI";
 
-type ChildrenProps = {
-  children: ReactNode;
-};
+import { ChildrenProps, ContextTypes, initialState } from "./types";
 
-export const PlacesContext = createContext<any>({});
+export const PlacesContext = createContext<ContextTypes>(initialState);
 
 export const PlacesContextProvider = ({ children }: ChildrenProps) => {
   const { data: chocolate, isLoading: IsLoadingChocolate } = useQuery({
     queryKey: ["chocolate"],
     queryFn: async () => {
       const res = await foursquareAPI.get("/places/search?ll=-29.3788,-50.8766&categories=17062&limit=50&radius=10000");
+      console.log(JSON.stringify(res.data, null, 2));
       return res.data;
     },
   });
