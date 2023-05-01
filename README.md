@@ -1,15 +1,15 @@
 <h1 align="center">Onde ir?</h1>
 
-<p align="center">Este projeto foi desenvolvido para prática de frontend. Meu objetivo era criar um projeto difente utilizando uma API terceirizada. Após algumas pesquisas de APIs, encontrei Foursquare, que é uma API incrível que nos retorna dados sobre locais, restaurantes, lojas e parques de determinada cidade. Os dados incluem o nome do item, bem como sua latitude e longitude. Como eu já tinha prática com a Google Maps API, pois utilizei em um projeto no meu trabalho, decidi que seria uma boa ideia juntar as duas e tomei a decisão de fazer um projeto sobre minha cidade. Moro em uma cidade turística, então o projeto ficou bem interessante, mostrando para os turistas os locais mais próximos a eles, utilizando filtros de parques, pontos turísticos, lojas, restaurantes e museus.</p>
+<p align="center">Meu objetivo nesse projeto era aprimorar minhas habilidades em frontend e trabalhar com uma API de terceiros. Depois de pesquisar algumas opções, encontrei a API Foursquare, que fornece dados sobre locais, restaurantes, lojas e parques de uma cidade específica, incluindo nome e coordenadas geográficas. Como já tinha experiência com a API do Google Maps, decidi unir as duas e criar um projeto sobre a minha cidade natal, que é muito turística. O resultado ficou bem interessante, permitindo que turistas encontrem os melhores pontos turísticos, restaurantes, museus e parques com filtros personalizados. Espero que vocês gostem!</p>
 
 ![01proto](https://user-images.githubusercontent.com/101361880/235376103-3a1de302-7d74-461f-a458-8d8d90480d33.gif)
 
-<h3 align="center">Ferramentas/Tecnologias utilizadas:</h3>
+<h3 >Ferramentas/Tecnologias utilizadas:</h3>
 
-<p align="center">Typescript</p>
-<p align="center">Tanstack/react-query</p>
-<p align="center">useContext</p>
-<p align="center">Sass (utilizei o formato module.scss)</p>
-<p align="center">Swiper</p>
-<p align="center">Axios</p>
-<p align="center">React-router-dom</p>
+<p >Typescript</p>
+<p >Tanstack/react-query</p>
+<p >useContext</p>
+<p >Sass (utilizei o formato module.scss)</p>
+<p >Swiper</p>
+<p >Axios</p>
+<p >React-router-dom</p>
