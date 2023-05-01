@@ -12,7 +12,7 @@ declare global {
 
 function Map() {
   const { category } = useParams();
-  const { data, isLoading }: any = DefineCategory(category);
+  const { data, isLoading } = DefineCategory(category);
   const mapRef = useRef(null);
 
   useEffect(() => {

@@ -1,6 +1,12 @@
 import { usePlaces } from "../hooks/usePlaces";
+import { Response } from "../context/types";
 
-const DefineCategory = (param: any) => {
+interface CategoryProps {
+  data: Response;
+  isLoading: boolean;
+}
+
+const DefineCategory = (param: string | undefined): CategoryProps => {
   const {
     chocolate,
     IsLoadingChocolate,
@@ -22,6 +28,8 @@ const DefineCategory = (param: any) => {
   if (param === "Landmarks") return { data: landmarks, isLoading: isLoadingLandmarks };
   if (param === "Lojas") return { data: clothingStores, isLoading: isLoadingClothingStores };
   if (param === "Parques") return { data: amusementParks, isLoading: isLoadingAmusementParks };
+
+  return { data: landmarks, isLoading: isLoadingLandmarks };
 };
 
 export default DefineCategory;

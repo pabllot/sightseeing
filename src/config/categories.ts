@@ -5,7 +5,12 @@ import museus from "../assets/museus.jpeg";
 import lojas from "../assets/lojas.jpg";
 import landmark from "../assets/turismo.jpg";
 
-export const categories = [
+type Category = {
+  category: string;
+  image: string;
+};
+
+export const categories: Category[] = [
   { category: "Landmarks", image: landmark },
   { category: "Parques", image: parques },
   { category: "Restaurantes", image: restaurantes },

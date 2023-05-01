@@ -14,7 +14,7 @@ const SwiperComponent = () => {
   return (
     <div className={styles.wrapper}>
       <Swiper modules={[Navigation, Pagination]} navigation pagination>
-        {categories.map((item: any, idx: number) => (
+        {categories.map((item, idx: number) => (
           <SwiperSlide>
             <div className={styles.category}>
               <Link key={idx} to={`/${item.category}`} style={{ textDecoration: "none" }}>
