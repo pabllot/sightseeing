@@ -2,17 +2,19 @@
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css";
 import "./styles.css";
 
 import { categories } from "../../config/categories";
+import { variantDefault } from "../../constants/framerMotion";
 import styles from "./styles.module.scss";
 
 const SwiperComponent = () => {
   return (
-    <div className={styles.wrapper}>
+    <motion.div variants={variantDefault} initial="hidden" animate="visible" exit="hidden" className={styles.wrapper}>
       <Swiper modules={[Navigation, Pagination]} navigation pagination>
         {categories.map((item, idx: number) => (
           <SwiperSlide>
@@ -25,7 +27,7 @@ const SwiperComponent = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </motion.div>
   );
 };
 

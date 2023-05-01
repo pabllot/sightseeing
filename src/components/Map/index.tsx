@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
+import { motion } from "framer-motion";
 
+import { variantDefault } from "../../constants/framerMotion";
 import DefineCategory from "../../utils/defineCategory";
 import styles from "./styles.module.scss";
 
@@ -42,9 +44,9 @@ function Map() {
           <div className={styles.loader} />
         </div>
       ) : (
-        <div className={styles.wrapper}>
+        <motion.div variants={variantDefault} initial="hidden" animate="visible" exit="hidden" className={styles.wrapper}>
           <div ref={mapRef} className={styles.map} />
-        </div>
+        </motion.div>
       )}
     </>
   );
