@@ -28,6 +28,11 @@
   cursor: pointer;
   color: rgb(251, 246, 246);
   font-size: 1.5rem;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
   @media (max-width: 768px) {
     top: 2rem;
     left: 2rem;
