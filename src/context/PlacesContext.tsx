@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { foursquareAPI } from "../services/foursquareAPI";
 
+import { foursquareAPI } from "../services/foursquareAPI";
 import { ChildrenProps, ContextTypes, initialState } from "./types";
 
 export const PlacesContext = createContext<ContextTypes>(initialState);
