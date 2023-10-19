@@ -6,8 +6,8 @@ import styles from "./styles.module.scss";
 const HomeText = () => {
   return (
     <motion.div className={styles.text} variants={variantDefault} initial="hidden" animate="visible" exit="hidden">
-      <span>Visitando Gramado?</span>
-      <strong>Encontre os pontos mais próximos de você!</strong>
+      <span>Visiting Gramado?</span>
+      <strong>Check out the nearest tourist attractions for you!</strong>
     </motion.div>
   );
 };

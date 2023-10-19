@@ -12,9 +12,9 @@ type Category = {
 
 export const categories: Category[] = [
   { category: "Landmarks", image: landmark },
-  { category: "Parques", image: parques },
-  { category: "Restaurantes", image: restaurantes },
-  { category: "Museus", image: museus },
-  { category: "Chocolates", image: chocolate },
-  { category: "Lojas", image: lojas },
+  { category: "Parks", image: parques },
+  { category: "Restaurants", image: restaurantes },
+  { category: "Museums", image: museus },
+  { category: "Chocolate", image: chocolate },
+  { category: "Stores", image: lojas },
 ];

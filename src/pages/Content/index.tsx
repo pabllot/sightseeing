@@ -9,7 +9,7 @@ const Content = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.text}>Encontre {category} mais perto de você.</div>
+      <div className={styles.text}>Find the {category} closest to you.</div>
       <Map />
       <Link to="/" style={{ textDecoration: "none" }}>
         <div className={styles.button}>
