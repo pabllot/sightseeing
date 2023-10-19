@@ -20,7 +20,10 @@ const SwiperComponent = () => {
           <SwiperSlide>
             <div className={styles.category}>
               <Link key={idx} to={`/${item.category}`} style={{ textDecoration: "none" }}>
-                <img className={styles.image} src={item.image} />
+                <div className={styles.content}>
+                  <button className={styles.button}>Click Here to Check it out</button>
+                  <img className={styles.image} src={item.image} />
+                </div>
               </Link>
               <p>{item.category}</p>
             </div>

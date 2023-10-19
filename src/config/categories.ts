@@ -1,9 +1,9 @@
-import chocolate from "../assets/chocolate.jpg";
-import parques from "../assets/parques.jpg";
-import restaurantes from "../assets/restaurantes.jpg";
-import museus from "../assets/museus.jpeg";
-import lojas from "../assets/lojas.jpg";
-import landmark from "../assets/turismo.jpg";
+import chocolate from "../assets/chocolate.webp";
+import parques from "../assets/parques.webp";
+import restaurantes from "../assets/restaurantes.webp";
+import museus from "../assets/museus.webp";
+import lojas from "../assets/lojas.webp";
+import landmark from "../assets/turismo.webp";
 
 type Category = {
   category: string;
